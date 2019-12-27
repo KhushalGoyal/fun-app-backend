@@ -1,6 +1,6 @@
-const socketConfig = require('../config/socket.config');
-const path = require('path');
+const socketConfig = require('./config/socket.config');
+require('./controllers/SocketController');
 
-socketConfig.SEVER.listen(8000, ()=>{
+socketConfig.SEVER.listen(8000, () => {
     console.log("App is running on port : 8000")
 })
